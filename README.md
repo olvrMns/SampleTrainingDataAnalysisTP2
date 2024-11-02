@@ -12,6 +12,7 @@
 - [AGGREGATION](https://www.youtube.com/watch?v=SUZKhBvxW5c&list=PLRAV69dS1uWQ6CZCehxKy0rjkqhQ2Z88t)
 - [plt.bar](https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.bar.html)
 - [plt.bar2](https://stackoverflow.com/questions/65649688/customizing-the-height-in-bar-chart-matplotlib)
+- [plt.bar3](https://stackoverflow.com/questions/28931224/how-to-add-value-labels-on-a-bar-chart)
 - [matplotlib](https://www.youtube.com/watch?v=ALX88JzeQnk)
 - [matplotlib2](https://queirozf.com/entries/matplotlib-examples-plots-with-string-axis-labels)
 - [pandas]
