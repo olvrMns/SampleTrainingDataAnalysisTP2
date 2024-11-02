@@ -11,7 +11,8 @@
 - [script](https://www.mongodb.com/docs/mongodb-shell/write-scripts/)
 - [AGGREGATION](https://www.youtube.com/watch?v=SUZKhBvxW5c&list=PLRAV69dS1uWQ6CZCehxKy0rjkqhQ2Z88t)
 
-- [matplotlib]
+- [matplotlib](https://www.youtube.com/watch?v=ALX88JzeQnk)
+- [matplotlib2](https://queirozf.com/entries/matplotlib-examples-plots-with-string-axis-labels)
 - [pandas]
 - [numpy]
 - [ipywidgets](https://ipywidgets.readthedocs.io/en/stable/)

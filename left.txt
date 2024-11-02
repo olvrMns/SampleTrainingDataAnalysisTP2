@@ -1,0 +1,48 @@
+pipeline = [
+    { "$group": {"_id": "$category_code", "count": {"$sum": 1}}},
+    { "$sort": {"count": -1} }
+]
+companies = inquisitor.getAggregation("companies", pipeline)
+inquisitor.toCSV("tache3_1.csv", companies)
+df = read_csv("../data/tache3_1.csv")
+new_names = {"_id": "category", "count": "number_of_companies"}
+df = df.drop(['Unnamed: 0'], axis=1)
+df.rename(columns=new_names, inplace=True)
+
+# x_axis= [elem for elem in range(len(df['category']))]
+# numberOfCompanies = list(df['number_of_companies'])
+categories = list(df['category'])
+# plt.barh(x_axis, numberOfCompanies)
+# plt.ylabel("categories")
+# plt.xlabel("Number of companies")
+# plt.yticks(x_axis, categories)
+# plt.savefig("../graphs/tache3_1.png")
+#plt.show()
+    
+options = widgets.Dropdown(options=(categories))
+# df.iloc[0]['category']
+# len(df)
+
+def getElement(categoryName: str):
+    for index in range(len(df)):
+        element = df.iloc[index]
+        if (element['category'] == categoryName):
+            return element
+    return None
+
+def getHighestCount():
+    hCount = 0
+    for index in range(len(df)):
+        if df.iloc[index]["number_of_companies"] > hCount: hCount = df.iloc[index]["number_of_companies"]
+    return hCount
+
+def select(categoryName: str):
+    element = getElement(categoryName)
+    bars = plt.bar([1], [element['number_of_companies']])
+    plt.xlabel('Category')
+    plt.ylabel('Number of companies')
+    plt.axes().set_ylim(top=10000)
+    #plt.axes().bar_label(bars)
+    plt.show()
+
+interact(select, categoryName=categories)
