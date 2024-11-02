@@ -10,7 +10,8 @@
 - [create-user](https://www.mongodb.com/docs/manual/tutorial/create-users/)
 - [script](https://www.mongodb.com/docs/mongodb-shell/write-scripts/)
 - [AGGREGATION](https://www.youtube.com/watch?v=SUZKhBvxW5c&list=PLRAV69dS1uWQ6CZCehxKy0rjkqhQ2Z88t)
-
+- [plt.bar](https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.bar.html)
+- [plt.bar2](https://stackoverflow.com/questions/65649688/customizing-the-height-in-bar-chart-matplotlib)
 - [matplotlib](https://www.youtube.com/watch?v=ALX88JzeQnk)
 - [matplotlib2](https://queirozf.com/entries/matplotlib-examples-plots-with-string-axis-labels)
 - [pandas]
